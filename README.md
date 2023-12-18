@@ -13,7 +13,8 @@ std::string s2 = U8_SS("börkbörkbörk Bär!");
 
 const char *s3 = U8_CC("börkbörkbörk Çlùnck!");
 
-const char8_t *s4 = u8"börkbörkbörk ökidöki!";      // no need for our special sauce here as there's no `char`-based type involved!
+const char8_t *s4 = u8"börkbörkbörk ökidöki!";
+// ^^^^^ no need for our special sauce here as there's no `char`-based type involved!
 ```
 
 instead of this (which will produce compile-time errors in C++20 mode):
